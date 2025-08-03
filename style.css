@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0F0F0F;
+} 
+h1{
+    font-size: 5rem;
+    color: #00ADB5;
+    font-weight: 600;
+    font-family: "Playwrite AU QLD", cursive;
+    text-align: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1A1A1A;
+    margin-top: 2rem;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Mozilla Headline", sans-serif;
+    color: #F5F5F5;
+    flex: 1;
+}
+.logo span{
+    color: #00ADB5;
+    font-style: italic;
+}
+.menu ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    flex: 1;
+}
+.menu a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Mozilla Headline", sans-serif;
+    color: #E0E0E0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0.5rem;
+    font-weight: 500;
+}
+.menu a:hover{
+    transform: translateY(-4px);
+    text-shadow: 0 0 8px #00ADB5;
+}
+.menu a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #B8FFF4;
+    transition: width 0.3s ease;
+  }
+  .menu  a:hover::after {
+    width: 100%;
+  }
+
+  /*Personal Information*/
+  .main_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+  }
+  .info{
+    flex: 1;
+  }
+
+  .info h2{
+     font-size: 3rem;
+     color: #F5F5F5;
+  }
+  #name{
+    color: #00ADB5;
+    font-family: "Mozilla Headline", sans-serif ;
+  }
+  .info p{
+    margin-top: 1rem;
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  .info p > span{
+    color: #00ADB5;
+  }
+  .info button{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 0.6rem  1.2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #00ADB5;
+    color: #E0E0E0;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+  .info button:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out; 
+  }
+  .image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .image img{
+     height: 250px;
+     width: auto;
+     border-radius: 3rem;   
+  }
+
+  /*Skills HTML,CSS,JavaScript*/
+  #skills{
+    scroll-margin-top: 100px;
+  }
+  .skills{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1A1A1A;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .same{
+    font-size: 1rem;
+    color: #E0E0E0;
+    text-align: center;
+    flex: 1 1 200px;
+    margin: 1rem;
+    font-family: "Mozilla Headline", sans-serif;
+  }
+  .same h2{
+    margin-bottom: 1rem;
+    color: #00ADB5;
+  }
+
+  /*Projects*/
+  .projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+  }
+  .project h2{
+    font-size: 3.5rem;
+    color: #00ADB5;
+    margin-bottom: 1rem; 
+  }
+  .project{
+    font-size: 2rem;
+    color: #B8FFF4;
+    margin: 1rem;
+    font-family: "Mozilla Headline", cursive;
+    font-weight: 500;
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  .project a{
+  display: inline-block;
+  background-color: #00ADB5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+.project a:hover{
+  background-color: #007D8A;
+}
+
+  /*footer*/
+  .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1E1E1E;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    color:#B8FFF4;
+    cursor: pointer;
+    margin: 0.2rem;
+
+  }
+  .contact a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease;
+    background-color: #E0E0E0;
+  }
+  .contact a:hover::after{
+    width: 100%;
+  }
+  .copy{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #E0E0E0;
+    
+  }
+  .owner{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #E0E0E0;
+    margin-top: 0.5rem;
+    
+    font-family: "Mozilla Headline", sans-serif;
+  }
+  .owner span{
+    color: #00ADB5;
+    font-style: italic;
+  }
+  @media (max-width: 768px) {
+    .main_sec {
+      flex-direction: column;
+      text-align: center;
+    }
+    .image img {
+      width: 70%;
+      height: auto;
+    }
+  }
+  @media (max-width:550px){
+    h1{
+        font-size: 4rem;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .menu a{
+        font-size: 1rem;
+    }
+    .project h2{
+      font-size: 1.5rem;
+    }
+    .project{
+      font-size: 1rem;
+    }
+  }
+ @media (max-width: 426px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+  @media (max-width: 376px){
+    h1{
+        font-size: 1rem;
+    }
+    .menu ul{
+        gap: 0.5rem;
+    }
+    .menu a{
+        font-size: 0.6rem;
+    }
+    .logo{
+        font-size: 0.5rem;
+    }
+    .info h2{
+        font-size: 1rem;
+    }
+    .info p{
+        font-size: 0.7rem;
+    }
+    .info button{
+        font-size: 0.6rem;
+        padding: 0.3rem 0.6rem;
+    }
+    .same{
+        font-size: 0.6rem;
+    }
+    .same h2{
+        font-size: 0.6rem;
+    }
+    .contact a{
+      font-size: 0.6rem;
+    }
+    .copy{
+        font-size: 0.6rem;
+    }
+    .owner{
+        font-size: 0.6rem;
+    }
+    .project h2{
+      font-size: 0.7rem;
+    }
+    .project{
+      font-size: 0.6rem;
+    }
+    .project a{
+      padding: 0.2rem 0.3rem;
+    }
+    
+  }
+  @media (max-width: 250px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul{
+        gap: 0.3rem;
+    }
+    .menu a{
+        font-size: 0.4rem;
+    }
+    .logo{
+        font-size: 0.4rem;
+    }
+    .info h2{
+        font-size: 0.6rem;
+    }
+    .info p{
+        font-size: 0.4rem;
+    }
+    .info button{
+        font-size: 0.4rem;
+        padding: 0.2rem 0.4rem;
+    }
+    .image img{
+        width: 40%;
+        height: auto;
+    }
+    .same{
+        font-size: 0.4rem;
+    }
+    .same h2{
+        font-size: 0.4rem;
+    }
+    .contact a{
+      font-size: 0.4rem;
+    }
+    .copy{
+        font-size: 0.4rem;
+    }
+    .owner{
+        font-size: 0.4rem;
+    }
+}
+
